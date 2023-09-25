@@ -88,41 +88,25 @@ exitPdf.onclick = () => {
     pdfViewer.classList.remove("activePdfViewer")
 }
 
-// extra
 
-//  var sectiondiv = document.getElementById("mk");
-// function makeList() {
 
-//      const datalist = [
-//         "red",
-//         "car",
-//         "fno",
-//         "dfkbdbf"
-//      ];
-//    for (let i = 0; i < datalist.length; ++i) {
-//         var data = `
-//         <h1>${datalist[i]}</h1> <br/>
-//         `;
-//         console.log(i);
-//         sectiondiv.innerHTML += data;
+ 
+// Video Section
 
-//    }
-// }
 
-// // Usage
-// makeList();
+// video list build { russell }
 
-var videolist = document.getElementById("v_list"); 
+
+var videolist = document.getElementById("v_list");
 var videoData = [
-    { title: "পদার্থের গঠন X", url: "https://i.ytimg.com/vi/wwc4X8RRiWM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAabnXVuwGeA7gg2EF9Zg_UUyT6WA" },
+    { title: "পদার্থের গঠন", url: "https://i.ytimg.com/vi/wwc4X8RRiWM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAabnXVuwGeA7gg2EF9Zg_UUyT6WA" },
     { title: "সালোকসংশ্লেষন", url: "https://i.ytimg.com/vi/4ZUeHCDJzh8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC8MKTQug99uY4seQcXmPFqyeU-dg" },
     { title: "Physics 2nd Chapter", url: "https://i.ytimg.com/vi/qYYu0dZuY3k/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDHJxGlXoFzmtwXBl7BREZWbTVOsw" },
     { title: "Physics 2nd Chapter", url: "https://i.ytimg.com/vi/7MPYZZCppzw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBE7al1himeUdAcL58LQYhsp-HvDw" },
 
-
 ];
 function videoList() {
-   
+
     for (let i = 0; i < videoData.length; ++i) {
         var model = `
         <div class="vidSuggetion">
@@ -131,8 +115,6 @@ function videoList() {
             <div class="vidTitle">${videoData[i].title}</div>
         </div>
         `;
-        // var d = `<h1>${i}</h1> <br/>`;
-        console.log(videoData[i].title);
         videolist.innerHTML += model;
 
     }
@@ -140,13 +122,8 @@ function videoList() {
 
 videoList();
 
+// end video list build
 
-
-function videoItemPlay() {
-
-
-}
-// Video Section
 
 // if goVideo button clicked
 goVideo.onclick = () => {
