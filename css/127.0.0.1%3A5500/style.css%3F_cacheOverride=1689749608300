@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* typography styles */
+body{
+    padding: 0 200px;
+}
+.btn-primary{
+    background-color: #ff42a5;
+}
+
+
+/* navbar styles */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    background-color: white;
+}
+.nav-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo img{
+    width: 100px;
+}
+.nav-menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+.nav-logo li a{
+    text-decoration: none;
+    
+}
+
+
+/* ----- banner section -------- */
+.banner-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content{
+    background-image: url("images/Group\ 14.png");
+    background-repeat: no-repeat;
+    
+}
+.banner-title-sm{
+    font-size: 3rem;
+}
+.banner-title-lg{
+    font-size: 6rem;
+}
+.banner-text ul{
+    list-style: none;
+}
+.banner-text ul li{
+
+}

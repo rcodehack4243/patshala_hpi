@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: #555;
+}
+
+h3 {
+    color: #333;
+}
+
+.header {
+    background-color: dodgerblue;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: #00000029 0px 3px 6px, #0000003b 0px 3px 6px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.header .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header .logo img{
+    width: 50px;
+    margin-right: 15px;
+    display: block;
+}
+.header .logo h1 {
+    font-size: 25px;
+    margin: 0;
+    color: white;
+}
+
+.header .logo h1 a {
+    text-decoration: none;
+    color: white;
+}
+nav{
+    display: flex;
+    align-content: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul a {
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: transform .4s;
+}
+
+nav ul a:hover {
+    transform: translateY(-5px);
+}
+
+.showcase {
+    padding: 45vh 0;
+    margin-top: 78px;
+    text-align: center;
+    background: linear-gradient(#1d2671cc, #1d2671cc, #c33764cc),url(images/work\ station.jpeg);
+    color: white;
+}
+
+.showcase h1 {
+    font-size: 45px;
+}
+
+.showcase p {
+    font-size: 120%;
+    color: white;
+}
+
+.showcase a {
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    padding: 10px 30px;
+    margin: 20px 0;
+    display: inline-block;
+    border-radius: 30px;
+    transition: all ease 0.5s
+}
+
+.showcase a:hover {
+    background-color: #0057ad;
+    transform: translateY(-2px);
+}
+
+.services {
+    padding: 100px;
+    background-color: #fdfdfd;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 780;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.services .row .box {
+    flex-basis: 300px;
+    border-radius: 10px;
+    margin: 30px 10px;
+    border: solid lightgray 1px;
+    transition: all ease 0.5s;
+}
+
+.services .row .box:hover {
+    box-shadow: #00000029 0px 3px 10px, #0000003b 0px 3px 40px;
+    transform: scaleY(1.02) scaleX(1.03);
+}
+
+.services .row .box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 0 0px;
+}
+
+.services .row .box h3 {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.services .row .box p {
+    padding: 10px;
+    text-align: justify;
+}
+.services .row .box a{
+    text-decoration: none;
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 10px;
+    margin: 10px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    transition: all ease 0.5s;
+}
+.services .row .box a:hover{
+    background-color: #0057ad;
+}
+
+
+/* Courses section */
+
+.courses {
+    padding: 100px;
+    background-color: #f0feff;
+    margin: 0 auto;
+}
+
+.courses .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.courses .row .box {
+    flex-basis: 250px;
+    margin: 20px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid lightgray 1px;
+    transition: all 0.2s;
+}
+
+.courses .row .box:hover {
+    border-color: dodgerblue;
+    box-shadow: none;
+}
+
+.courses .row .box:hover a {
+    border-color: dodgerblue;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.courses .row .box img {
+    width: 80px;
+    display: block;
+    margin: 30px auto;
+}
+
+.courses .row .box h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.courses .row .box p {
+    padding: 20px;
+    text-align: center;
+}
+
+.courses .row .box p strong {
+    font-size: larger;
+}
+
+.courses .row .box a {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    color: black;
+    transition: all 0.3s;
+}
+
+.courses .row .box a:hover {
+    background-color: #0057ad;
+    color: white;
+}
+
+/* -----Features---------- */
+.features {
+    padding: 50px;
+    background: radial-gradient(white, #bcdbfa);
+}
+
+.features .row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features .box {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.features .box h1 {
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+.features .box p {
+    color: #555;
+}
+
+.features .box a {
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 30px 0;
+    display: inline-block;
+    transition: all 0.5s
+}
+
+.features .box a:hover {
+    background-color: #0057ad;
+}
+
+.features .box img {
+    width: 100%;
+    padding: 50px 0;
+}
+
+
+.contact {
+    padding: 90px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    width: 500px;
+    height: 70%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 50px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e7e7e7;
+    box-shadow: #00000029 0px 3px 6px, #0000003b 0px 3px 6px;
+}
+
+.contact form input {
+    padding: 15px;
+    margin: 5px 0;
+    font-size: 120%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact form textarea {
+    padding: 15px;
+    margin: 5px 0;
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.contact form input,textarea:focus{
+    outline-color: dodgerblue;
+}
+.contact form input:last-child {
+    background: linear-gradient(#56abff, dodgerblue);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.contact form input:last-child:hover{
+    background: dodgerblue;
+}
+
+.footer {
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eeeeee;
+}
+.footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 250px;
+}
+.footer ul a{
+    text-decoration: none;
+    color: #555;
+    font-size: larger;
+    transition: all ease 0.2s;
+}
+.footer ul a:hover{
+    color: dodgerblue;
+}
+.menu-icon{
+    margin-left: 20px;
+    display: none;
+    font-size: x-large;
+}
+
+
+
+/* === Note for Media Query === */
+
+/* Note: for using (max-width):
+1. first set the largest value of max-width (ex: 1080px )
+2. then set the next largest values
+3. repeat step-2
+
+Note: for using (min-width):
+1. first set the smallest value of max-width (ex: 320px )
+2. then set the next smallest values
+3. repeat step-2 */
+
+
+/* Responsive for wide device */
+@media screen and (max-width: 1024px) {
+
+    .services {
+        padding: 70px;
+    }
+
+    .contact form {
+        width: 450px;
+    }
+}
+
+/* Responsive for tablet device */
+@media screen and (max-width: 768px) {
+    .services .row {
+        flex-wrap: wrap;
+    }
+
+    .services .row .box {
+        flex-basis: 400px;
+    }
+
+    .courses .row .box {
+        flex-basis: 200px;
+    }
+    .courses .row .box:hover a {
+        background-color: dodgerblue;
+        color: white;
+    }
+
+    .contact form {
+        width: 400px;
+    }
+    .features .row {
+        justify-content: center;
+    }
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Responsive for mobile device */
+@media screen and (max-width: 480px) {
+    .services {
+        padding: 90px 0;
+    }
+
+    .services .row .box {
+        flex-basis: 400px;
+        margin: 30px;
+    }
+
+    .courses .row .box {
+        flex-basis: 300px;
+        margin: 30px;
+    }
+
+    .courses {
+        padding: 90px 0;
+    }
+
+    .contact {
+        padding: 0px;
+    }
+
+    .contact form {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+/* --------------media query for menu-------------- */
+
+@media only screen and (max-width:800px) {
+    nav ul{
+        position: absolute;
+        top: 90px;
+        left: 0;
+        background: #1781eb;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+        flex-direction: column;
+    }
+    nav ul li{
+        margin: 5px 10px;
+    }
+    nav ul li a{
+        color: #ddd;
+    }
+    nav ul li a:hover{
+        color: white;
+        transform: translate(8px);
+    }
+    .menu-icon{
+        display: flex;
+        cursor: pointer;
+        color: white;
+        align-items: center;
+    }
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(fonts/Poppins-Bold.ttf);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+}
+html{
+    scroll-behavior: smooth;
+}
+::selection{
+    background-color: dodgerblue;
+    color: white;
+}

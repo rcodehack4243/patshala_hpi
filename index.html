@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ePathshala</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="shortcut icon" href="favicon/android-chrome-512x512.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9c87656713.js" crossorigin="anonymous"></script>
+    <script src="js/vue.global.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <div class="homePage QuizApp">
+        <div class="logo">
+            <img src="img/logo-no-background.png" alt="">
+        </div>
+        <div class="slogan">
+        </div>
+        <div class="startBtn">
+            <button>Go</button>
+        </div>
+        <div class="copyRight">
+            Developed by - <a href="https://sites.google.com/view/rahat-portfolio" target="_blank">Rahad Ullah</a>
+        </div>
+    </div>
+    <div class="menuPage QuizApp">
+        <div class="menuHeader menuLogo">
+            <img src="img/book.png" alt="">
+            <h3>ePathshala</h3>
+        </div>
+        <div class="menuOptions">
+            <div class="goQuiz menuOption">
+                <img src="img/quiz.gif" alt="">
+                <p>Quiz</p>
+            </div>
+            <div class="goBook menuOption">
+                <img src="img/book.gif" alt="">
+                <p>E-Books</p>
+            </div>
+            <div class="goVideo menuOption">
+                <img src="img/video.gif" alt="">
+                <p>Video Lesson</p>
+            </div>
+            <div class="goAudio menuOption">
+                <img src="img/audio.gif" alt="">
+                <p>Audio Books</p>
+            </div>
+            <div class="goTeacher menuOption">
+                <img src="img/man-teacher-96.png" alt="">
+                <p>Teacher Login</p>
+            </div>
+            <div class="goStudent menuOption">
+                <img src="img/man-student-96.png" alt="">
+                <p>Student Login</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="rulesBox QuizApp">
+        <div class="rulesTitle">
+            <h3>Some Rules of this Quiz</h3>
+        </div>
+        <div class="rulesList">
+            <ol>
+                <li>You will have only <span style="color: dodgerblue;">15 seconds</span> per each question.</li>
+                <li>Once you select your answer, it can't be undone.</li>
+                <li>You can't select any option once time goes off.</li>
+                <li> You can't exit from the Quiz while you're playing.</li>
+                <li>You'll get points on the basis of your correct answers.</li>
+            </ol>
+        </div>
+        <div class="rulesBtn">
+            <button class="exitBtn btn leftBtn pairBtn">Exit Quiz</button>
+            <button class="continueBtn btn rightBtn pairBtn">Continue</button>
+        </div>
+    </div>
+    <div class="Quizes QuizApp">
+        <header class="header">
+            <div class="quizHeader">
+                <div class="tinyLogo">
+                    <img src="img/book.png" alt="">
+                    <h3>ePathshala</h3>
+                </div>
+                <div class="timeCount">
+                    <div class="timeLeft">Time Left</div>
+                    <div class="seconds">15</div>
+                </div>
+            </div>
+            <div class="timeLines"></div>
+        </header>
+        <div class="section">
+            <div class="que-text">
+            </div>
+            <div id="myOptions">
+            </div>
+        </div>
+        <footer>
+            <div class="totalQuestion">
+                <p>1 of 5 Questions</p>
+            </div>
+            <button class="nextBtn btn rightBtn pairBtn">Next</button>
+        </footer>
+    </div>
+
+    <div class="resultBox QuizApp">
+        <div class="resultImg">
+            <img src="img/winner-1.svg" alt="">
+        </div>
+        <div class="completeText">
+            <p>You've completed the Quiz!</p>
+        </div>
+        <div class="scoreText">
+            <span>Carry On! You Have Got <p> 0 </p> Out Of <p> 5 </p></span>
+        </div>
+        <div class="finishedBtns">
+            <button class="replay">Replay</button>
+            <button class="exit">Exit</button>
+        </div>
+    </div>
+
+    <div class="classBox QuizApp">
+        <div class="topHeader">
+            <div class="goMenu leftArrow">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="topHeaderTitle">
+                <p>E-Books</p>
+            </div>
+        </div>
+        <div class="classLevel">
+            <!-- <div class="LevelOption" style="width: 244px;">Pre-Primary</div>
+            <div class="LevelOption class1">Class - 01</div>
+            <div class="LevelOption">Class - 02</div>
+            <div class="LevelOption">Class - 03</div>
+            <div class="LevelOption">Class - 04</div>
+            <div class="LevelOption">Class - 05</div>
+            <div class="LevelOption">Class - 06</div>
+            <div class="LevelOption">Class - 07</div>
+            <div class="LevelOption">Class - 08</div>
+            <div class="LevelOption">Class - 09</div>
+            <div class="LevelOption">Class - 10</div>
+            <div class="LevelOption">Class - 11</div>
+            <div class="LevelOption">Class - 12</div> -->
+        </div>
+    </div>
+    <div class="eBooks QuizApp">
+        <div class="topHeader">
+            <div class="backClassBox leftArrow">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="topHeaderTitle">
+                <p>E-Books</p>
+            </div>
+        </div>
+        <div class="subjects classLevel">
+            <div class="subject subjectOpt">Bangla</div>
+            <div class="subject subjectOpt">English</div>
+            <div class="subject subjectOpt">Mathmematics</div>
+        </div>
+    </div>
+    <div class="pdfViewer QuizApp hidden">
+        <embed src="ebook/Primary-2023- Bangla-Class-1-(BV) Com update.pdf" type="application/pdf" />
+        <div class="exitPdf">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+    </div>
+
+    <!-- ------------- videos ------------ -->
+
+    <div class="videos QuizApp hidden">
+        <div class="topHeader">
+            <div class="goMenu leftArrow">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="topHeaderTitle">
+                <p>Video Lesson</p>
+            </div>
+        </div>
+        <div class="vidSubjects classLevel">
+            <div class="vidSubject subjectOpt">Bangla</div>
+            <div class="vidSubject subjectOpt">English</div>
+            <div class="vidSubject subjectOpt">Mathmematics</div>
+            <div class="vidSubject subjectOpt">Science</div>
+            <div class="vidSubject subjectOpt">Agricultural Studies</div>
+        </div>
+    </div>
+
+
+    <div class="videoPlayBox QuizApp hidden ">
+        <div class="videoPlay">
+            <div id="ifm"></div>
+            <div class="exitVideo exitPdf" style="color: black;">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+        </div>
+        <div>
+        </div>
+        <div id="v_list"></div>
+
+    </div>
+    </div>
+    <!-- ----------- Audios ------------ -->
+    <div class="audios QuizApp hidden">
+        <div class="topHeader">
+            <div class="goMenu leftArrow">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="topHeaderTitle">
+                <p>Audio Book</p>
+            </div>
+        </div>
+        <div class="audSubjects classLevel">
+            <div class="audSubject subjectOpt">English</div>
+            <div class="audSubject subjectOpt">Bangla</div>
+            <div class="audSubject subjectOpt">Mathmematics</div>
+            <div class="audSubject subjectOpt">Science</div>
+            <div class="audSubject subjectOpt">Islamic Studies</div>
+            <div class="audSubject subjectOpt">Glabal Studies</div>
+        </div>
+    </div>
+    <div class="audPlayBox QuizApp hidden">
+        <div class="topHeader">
+            <div class="exitAudio leftArrow">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="topHeaderTitle">
+                <p>Audio Player</p>
+            </div>
+        </div>
+        <div class="audioPlay audSuggestion">
+            <audio src="audio/C6L04A1.mp3" controls></audio>
+        </div>
+        <div class="audSuggestion">
+            <i class="fa-solid fa-circle-play"></i>
+            <div class="audTitle">পাঠ - ১</div>
+        </div>
+        <div class="audSuggestion">
+            <i class="fa-solid fa-circle-play"></i>
+            <div class="audTitle">পাঠ - ২</div>
+        </div>
+        <div class="audSuggestion">
+            <i class="fa-solid fa-circle-play"></i>
+            <div class="audTitle">পাঠ - ৩</div>
+        </div>
+        <div class="audSuggestion">
+            <i class="fa-solid fa-circle-play"></i>
+            <div class="audTitle">পাঠ - ৪</div>
+        </div>
+        <div class="audSuggestion">
+            <i class="fa-solid fa-circle-play"></i>
+            <div class="audTitle">পাঠ - ৫</div>
+        </div>
+        <div class="audSuggestion">
+            <i class="fa-solid fa-circle-play"></i>
+            <div class="audTitle">পাঠ - ৬</div>
+        </div>
+        <div class="audSuggestion">
+            <i class="fa-solid fa-circle-play"></i>
+            <div class="audTitle">পাঠ - ৭</div>
+        </div>
+    </div>
+    <div class="studentLogin QuizApp hidden">
+        <div class="wrapper">
+            <div class="exitStLogin leftArrow">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="inner-warpper text-center">
+                <h2 class="title">Login to your account</h2>
+                <form action="" id="formvalidate">
+                    <div class="input-group">
+                        <!-- <label class="palceholder" for="userName">User Name</label> -->
+                        <input class="form-control" name="userName" id="userName" type="text" placeholder="User Name" />
+                        <span class="lighting"></span>
+                    </div>
+                    <div class="input-group">
+                        <!-- <label class="palceholder" for="userPassword">Password</label> -->
+                        <input class="form-control" name="userPassword" id="userPassword" type="password"
+                            placeholder="Password" />
+                        <span class="lighting"></span>
+                    </div>
+
+                    <button type="submit" id="login">Login</button>
+                    <div class="clearfix supporter">
+                        <div class="pull-left remember-me">
+                            <input id="rememberMe" type="checkbox">
+                            <label for="rememberMe">Remember Me</label>
+                        </div>
+                        <a class="forgot pull-right" href="#">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="signup-wrapper text-center">
+                <a href="#">Don't have an accout? <span class="text-primary">Create One</span></a>
+            </div>
+
+
+        </div>
+        <script src="js/questions.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/rcode.js" type="text/javascript"></script>
+
+
+
+</body>
+
+</html>

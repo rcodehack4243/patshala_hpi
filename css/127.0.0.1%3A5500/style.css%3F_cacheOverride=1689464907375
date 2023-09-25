@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+* { margin: 0px; padding: 0px; box-sizing: border-box; font-family: "Open Sans", sans-serif; }
+.btn-primary { background-color: rgb(253, 110, 10); color: white; border-radius: 5px; border: 0px; font-size: medium; font-weight: 700; padding: 15px 35px; margin: 5px 0px; cursor: pointer; }
+.btn-primary:hover { background-color: rgb(227, 96, 2); }
+.section-title { color: rgb(24, 24, 24); font-size: 35px; font-weight: 700; text-align: center; margin: 15px 0px; }
+.section-description { color: rgb(117, 117, 117); font-size: 18px; font-weight: 400; line-height: 30px; text-align: center; margin: 10px 0px; }
+nav { display: flex; justify-content: space-between; align-items: center; padding: 30px 60px 30px 0px; }
+.nav-title { font-size: 45px; font-weight: 800; color: rgb(24, 24, 24); }
+.nav-title span { color: rgb(253, 110, 10); }
+nav ul { display: flex; align-items: center; }
+nav li { list-style: none; margin-right: 50px; }
+nav a { text-decoration: none; color: rgb(71, 71, 71); }
+nav a:hover { color: rgb(253, 110, 10); }
+.header { background-color: rgb(255, 248, 243); background-image: url("images/header_bg.png"); background-size: 700px; background-repeat: no-repeat; background-position: right bottom; display: flex; }
+.vr-banner img { width: 93%; }
+.vr-banner { padding: 30px; }
+.header-container { width: 100%; padding: 0px 10px; }
+.banner { display: flex; justify-content: space-between; align-items: center; }
+.banner-greeting { font-size: 40px; color: rgb(71, 71, 71); font-weight: 600; }
+.banner .banner-title { font-size: 65px; color: rgb(24, 24, 24); font-weight: 700; }
+.banner p { font-weight: 400; color: rgb(71, 71, 71); margin: 20px 0px; max-width: 500px; }
+.banner-content button { margin-right: 20px; }
+.profile-pic { width: 500px; }
+main { max-width: 1140px; margin: 0px auto; }
+.about { margin: 130px auto; padding: 130px 150px; border-radius: 10px; background: rgb(255, 248, 243); }
+.about-info-container { display: flex; justify-content: space-around; margin: 20px; }
+.about-info { text-align: center; }
+.info-title { color: rgb(117, 117, 117); font-weight: 600; }
+.info-description { color: rgb(71, 71, 71); font-weight: bolder; }
+.skill-section { margin: 130px 0px; }
+.skills-container {display: flex;justify-content: space-around;align-items: center;margin: 50px auto;gap: 24px;flex-direction: column;}
+.skill-description { padding: 0px 150px; }
+.skill { border-radius: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 50px 0px; padding: 30px; }
+.skill .skill-title { margin: 30px 0px 20px; }
+.skill .skill-text { color: rgb(117, 117, 117); font-size: 16px; font-weight: 400; line-height: 28px; }
+.resume { margin-bottom: 110px; }
+.resume-container { display: flex; justify-content: space-between; gap: 50px; margin-top: 50px; }
+.resume-title { color: rgb(71, 71, 71); font-size: 30px; font-weight: 700; margin: 20px 0px; }
+.resume-item { margin: 30px 0px; }
+.resume-item-title { color: rgb(71, 71, 71); font-size: 25px; font-weight: 700; margin-bottom: 10px; }
+.institute { color: rgb(117, 117, 117); font-size: 20px; font-weight: 600; margin-bottom: 20px; }
+.resume-item-description { color: rgb(117, 117, 117); font-size: 16px; font-weight: 400; }
+.resume-download { text-align: center; margin: 20px 0px; }
+footer { background-color: rgb(255, 248, 243); padding: 130px 0px; }
+.footer-container { max-width: 1140px; margin: 0px auto; display: flex; justify-content: space-between; gap: 110px; }
+.footer-column { text-align: start; }
+.footer-title { text-align: start; }
+.footer-text { text-align: start; }
+.social-links { display: flex; justify-content: flex-start; align-items: center; }
+.social-links a { display: block; margin-right: 12px; padding: 5px; border-radius: 10px; }
+.social-links a:hover { transform: scale(1.1); }
+.social-links img { width: 24px; }
+form input, textarea { min-width: 450px; display: block; padding: 15px; border-radius: 5px; border: none; color: rgb(117, 117, 117); font-size: 16px; font-weight: 400; margin: 20px 0px; }
+form textarea:focus-visible { outline: rgb(253, 110, 10) solid 1.5px; }
+form input:focus-visible { outline: rgb(253, 110, 10) solid 1.5px; }
+.hidden { display: none; }
+@media screen and (max-width: 576px) {
+  .skill-description { padding: 10px; }
+}
